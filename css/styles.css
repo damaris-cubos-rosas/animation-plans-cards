@@ -9,10 +9,10 @@ body {
     border-radius: 0.5rem;
     position: relative;
     text-align: center;
+    transition: all 0.5s linear;
 }
 
 #individual {
-    border: 1px solid #5f72c0;
     background-image: linear-gradient(90deg, #5f72c0, #78aad2);
     position: absolute;
     top: 200px;
@@ -20,7 +20,6 @@ body {
 }
 
 #shared {
-    border: 1px solid #f3a6c0;
     background-image: linear-gradient(90deg, #f3a6c0, #8d569f);
     position: absolute;
     top: 200px;
@@ -28,7 +27,6 @@ body {
 }
 
 #group {
-    border: 1px solid #ca6a96;
     background-image: linear-gradient(90deg, #ca6a96, #d9ac8b);
     position: absolute;
     top: 200px;
@@ -41,6 +39,8 @@ h2, p {
 }
 
 a {
+    position: absolute;
+    left: 70px;
     color: grey;
     text-decoration: none;
     background-color: white;
@@ -51,6 +51,7 @@ a {
     font-size: 12px;
     font-weight: 600;
     perspective: 100px;
+    transition: all 1s linear;
 }
 
 h2 {
@@ -82,15 +83,13 @@ p:not(.gb) {
     padding-top: 0;
 }
 
-a:hover {
-    transform: translateY(0, 200px);
-}
-
 .card:hover {
     transform: scale(1.2);
     z-index: 1;
 }
 
-
+a:hover { 
+    transform: translateY(50px);
+}
 
 
